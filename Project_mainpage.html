@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>     
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information on COVID-19</title>
+    <style>
+        .top{
+            width: 100%;
+            padding-top: 15px;
+            padding-bottom:15px;
+            border: 1px solid black;
+            background-color: blanchedalmond;
+        }
+        .nav_div{
+            background-color:lavender;
+        }
+        .heading{
+            text-align: center;
+            text-decoration: underline;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .side{
+            height: auto;
+            width: 250px;
+            border: 1px solid black;
+            float: right;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: blanchedalmond;
+        }
+        .nav{
+            margin: 10px;
+            padding: 5px;
+            color: blue;
+            text-decoration: none;
+        }
+        #Iframe{
+            width: 70%;
+            height: 6200px;
+            overflow: scroll;
+            margin: 20px;
+        }
+        .nav_1{
+            font-size: 25px;
+        }
+        .nav_1:hover{
+            background-color: deepskyblue;;
+        }
+        #side_image{
+            width: 100%;
+        }
+        #Table th,td{
+            border-bottom: 1px solid grey;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    </style>
+    <script>
+        //function resizeIframe(obj) {
+          //obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        //}
+        /*function resize(){
+        var iframe = document.getElementById("IFrame");
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        }*/
+        //function resizeIframe(obj) {
+          //obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+        //}
+        /*var iframe = document.getElementById("IFrame");
+        iframe.onload = function(){
+            iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        }*/
+    </script>
+</head>
+<body>
+    <div class="top"><h1 class="heading" >COVID-19</h1></div>
+    <div class="nav_div">
+        <table border="2px" cellspacing="0px" cellpadding="10px" width="100%" >
+            <tr>
+                <th class="nav_1"><a href="Origin&History.html" class="nav" target="myFrame">Origin</a></th>
+                <th class="nav_1"><a href="statistics.html" class="nav" target="myFrame">Statistics</a></th>
+                <th class="nav_1"><a href="Symptoms.html" class="nav" target="myFrame">Symptoms</a></th>
+                <th class="nav_1"><a href="vaccine_prevention.html" class="nav" target="myFrame">Prevention and vaccines</a></th>
+                <th class="nav_1"><a href="faq.html" class="nav" target="myFrame">FAQs</a></th>
+                <th class="nav_1"><a href="test.html" class="nav" target="myFrame">Test</a></th>
+            </tr>
+        </table>
+    </div>
+    <div class="side_div"><aside class="side">Corona Virus disease 2019
+        <img src="Side_image.jpg" alt="" id="side_image">
+        <h4 style="text-align: center;">Transmission and life-cycle of SARS-CoV-2 causing COVID-19</h4>
+        <table width="100%" id="Table">
+            <tr><th>Origin </th><td>SARS-CoV-2</td></tr>
+            <tr>
+                <th>Speciality</th>
+                <td>Infectious disease</td>
+            </tr><hr>
+            <tr><th>Symptoms </th><td>Fever, cough, fatigue, shortness of breath, vomiting, nausea, loss of taste of smell; some cases asymptomatic</td></tr>
+            <tr><th>Complications </th><td>Pneumonia, viral sepsis, kidney failure, respiratory failure</td></tr>
+            <tr>
+                <th>Usual onset </th>
+                <td>2 to 14 days(typically 5) from infection</td>
+           </tr>
+            <tr>
+                <th>Duration </th>
+                <td>5 days to 10+ months Known</td>
+            </tr>
+            <tr>
+                <th>Causes</th>
+                <td>SARS-CoV-2</td>
+            </tr>
+            <tr>
+                <th>Diagnostic Method</th>
+                <td>rRT-PCR testing, CT scan, Rapid antigen test</td>
+            </tr>
+            <tr>
+                <th>Prevention</th>
+                <td>Face coverings, quarantine, physical/social distancing, ventilation, hand washing, vaccination</td>
+            </tr>
+            <tr>
+                <th>Treatment</th>
+                <td>Symptomatic and supportive</td>
+            </tr>
+            <tr></tr>
+        </table>
+    </aside>
+    </div>
+    <iframe src="Origin&History.html" frameborder="0" id="Iframe" name="myFrame" seamless="seamless" scrolling="no"></iframe>
+</body>
+</html>
