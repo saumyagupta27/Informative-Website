@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quick Test</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color:darkblue;
+        }
+        p, form{
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        label{
+            font-weight: bold;
+        }
+        #submit{
+            width: 70%;
+            background-color: green;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px ;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #submit:hover {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Take a quick health check-up</h1>
+    <p>This test will tell you if you need to get tested for COVID-19 or not.</p>
+    <form onsubmit="show()">
+        <fieldset>
+        <label for="fever">Do you have fever?</label><br>
+        <input type="radio" id="fever" name="fever" value="yes" onclick="count()">Yes<br>
+        <input type="radio" id="fever" name="fever" value="no">No<br><br>
+        <label for="smell">Have lost your sense of smell?</label><br>
+        <input type="radio" id="smell" name="smell" value="yes" onclick="count()">Yes<br>
+        <input type="radio" id="smell" name="smell" value="no">No<br><br>
+        <label for="taste">Have lost your sense of taste?</label><br>
+        <input type="radio" id="taste" name="taste" value="yes" onclick="count()">Yes<br>
+        <input type="radio" id="taste" name="taste" value="no">No<br><br>
+        <label for="headache">Are you suffering from headache?</label><br>
+        <input type="radio" id="headache" name="headache" value="yes" onclick="count()">Yes<br>
+        <input type="radio" id="headache" name="headache" value="no">No<br><br>
+        <label for="pain">Do you have muscle pain?</label><br>
+        <input type="radio" id="muscle_pain" name="muscle_pain" value="yes" onclick="count()">Yes<br>
+        <input type="radio" id="muscle_pain" name="muscle_pain" value="no">No<br><br>
+        <label for="breathing">Are you experiencing breathing problems?</label><br>
+        <input type="radio" id="breathing" name="breathing" value="yes" onclick="count()">Yes<br>
+        <input type="radio" id="breathing" name="breathing" value="no">No<br><br>
+        <input type="submit" value="Submit" id="submit">
+        </fieldset>
+    </form>
+    <script>
+        var x=0;
+        function count() {
+            x++;
+        }
+        function show() {
+            if(x>2)
+                alert("You should get tested for COVID-19");
+            else if(x==0)
+                alert("You do not need to get tested for COVID-19");
+            else
+                alert("You do not need to get tested for COVID-19. However, be alert for more symptoms!");
+        }
+    </script>
+</body>
+</html>
