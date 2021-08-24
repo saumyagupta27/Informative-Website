@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FAQs</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin:15px;
+        }
+        h1 {
+            text-decoration: underline;
+            color: darkblue;
+        }
+        div {
+            border-bottom:1px solid rgb(0, 25, 74);
+            padding: 10px;
+            font-size: 20px;
+        }
+        .ques {
+            font-weight: bold;
+        }
+        
+        .ques:hover {
+            cursor: pointer;
+            background-color: rgb(209, 209, 209);
+        }
+    </style>
+</head>
+<body>
+    <h1>Frequently Asked Questions (FAQs)</h1>
+    <div class="ques" onclick="show('first')">
+        1. Can covid-19 be transmitted through food?
+    </div>
+    <div id="first" style="display: none;">
+        There is currently no evidence that people can catch COVID-19 from food. 
+        The virus that causes COVID-19 can be killed at temperatures similar to that of other known viruses and bacteria found in food
+    </div>
+    <div class="ques" onclick="show('second')">
+        2. Are individuals contagious before they develop symptoms?
+    </div>
+    <div id="second" style="display: none;">
+        COVID-19 can be spread by an individual before they develop symptoms. This poses a problem because people who do not know they are infected may continue to go to work, school, and other public places. People who are sick and have symptoms are more likely to stay home, which means fewer opportunities for the virus to spread from one person to another. When asymptomatic transmission occurs, infection control experts and public health officials may need to take additional measures, such as social distancing, isolating patients, or using quarantines. 
+    </div>
+    <div class="ques" onclick="show('third')">
+        3. Who is at greatest risk of serious illness?
+    </div>
+    <div id="third" style="display: none;">
+        Although COVID-19 can affect anyone, individuals at greater risk of severe illness from COVID-19 include the following:
+        <ul>
+            <li>Older adults (the risk for severe illness increases with age)</li>
+            <li>People with certain medical conditions like cancer, chronic kidney disease, chronic lung disease, dementia, diabetes (type 1 or type 2), down syndrome, heart disease, HIV, liver disease, and sickle cell disease</li>
+            <li>Those living in a nursing home or long-term care facility</li>
+            <li>Obesity (body mass index [BMI] >30)</li>
+            <li>Pregnant women</li>
+            <li>Smokers</li>
+            <li>Those who have a weakened immune system from solid organ transplant</li>
+        </ul>
+    </div>
+    <div class="ques" onclick="show('fourth')">
+        4. What are the benefits of getting a COVID-19 vaccine?</div>
+    <div id="fourth" style="display: none;">
+        A COVID-19 vaccine might:
+        <ul>
+            <li>Prevent you from getting COVID-19 or from becoming seriously ill or dying due to COVID-19</li>
+            <li>Prevent you from spreading the COVID-19 virus to others</li>
+            <li>Add to the number of people in the community who are protected from getting COVID-19 — making it harder for the disease to spread and contributing to herd immunity</li>
+            <li>Prevent the COVID-19 virus from spreading and replicating, which allows it to mutate and possibly become more resistant to vaccines</li>
+        </ul>
+    </div>
+    <div class="ques" onclick="show('fifth')">
+        5. How does COVID-19 affect pregnant women?</div>
+    <div id="fifth" style="display: none;"> 
+        Pregnant women with COVID-19 may be more likely to experience preterm birth and severe illness from COVID-19 than non-pregnant women. Pregnant women should take steps to reduce their risk of getting sick and ensuring that those around them also take steps to minimize risk, including proper hand washing, social distancing, wearing a face mask in public, and getting vaccinated against COVID-19.
+    </div>
+    <div class="ques" onclick="show('sixth')">
+        6. Is COVID-19 passed on more easily indoors?
+    </div>
+    <div id="sixth" style="display: none;">
+        There is evidence that COVID-19 is passed on more easily in indoor, crowded and poorly ventilated places where people are closer together for long periods of time. This includes restaurants, gyms, nightclubs, offices and places of worship.
+    </div>
+    <script>
+        function show(x) {
+            var property=document.getElementById(x).style.display
+            if(property=="none")
+                document.getElementById(x).style.display="block"
+            else
+                document.getElementById(x).style.display="none"
+        }
+    </script>
+</body>
+</html>
